@@ -1,0 +1,50 @@
+.collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-color: #f9f9f9;
+    background-repeat: no-repeat;
+    
+
+    &.menstyle {
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+        height: 33em;
+        background-size: 16%;
+    }
+
+    &.womenstyle {
+        background-size: 60%;
+    }
+
+    &.hatstyle {
+        background-size: 90%;
+    }
+
+    .content {
+        background-color: white;
+        width: 10em;
+        height: 3em;
+        text-align: center;
+
+        .title {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+
+            .items {
+                text-transform: lowercase;
+                font-size: 1rem;
+            }
+        }
+    }
+
+
+    
+}
+
+
+
+
+

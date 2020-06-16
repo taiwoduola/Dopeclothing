@@ -1,0 +1,43 @@
+.arrivals {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #F9F9F9;
+    background-position-x: 100px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+  
+ 
+}
+
+.page_infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 170px;
+
+    
+    
+    
+   
+    
+
+    .paragraphs {
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: normal;
+        color:rgb(37, 37, 39);
+        margin-bottom: .7em;
+        letter-spacing: .2em;
+    }
+
+    .titles {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}

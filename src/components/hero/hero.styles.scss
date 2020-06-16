@@ -1,0 +1,36 @@
+.arrival {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F9F9F9;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 45%;
+ 
+}
+
+.page_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22em;
+    
+
+    .paragraph {
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: normal;
+        color:rgb(37, 37, 39);
+        margin-bottom: .7em;
+        letter-spacing: .2em;
+    }
+
+    .title {
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}
