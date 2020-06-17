@@ -1,0 +1,28 @@
+.navigations {
+    height: 80px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+    align-items: center;
+    margin: 0 auto;
+
+    .logo-container {
+        width: 10%;
+    }
+
+    .navs {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        text-transform: uppercase;
+        font-size: .9rem;
+    }
+
+    .nav-icons {
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
