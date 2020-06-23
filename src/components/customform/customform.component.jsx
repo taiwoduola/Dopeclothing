@@ -5,7 +5,7 @@ import './customform.styles.scss';
 
 const CustomForm = ({handleChange, label, ...otherProps}) => (
     <div className='custom-form'>
-        <input className='form-input' onChange={handleChange} />
+        <input className='form-input' onChange={handleChange} {...otherProps} />
         {
             label ? (
                 <label
@@ -17,6 +17,6 @@ const CustomForm = ({handleChange, label, ...otherProps}) => (
                 </label>
             ) : null}
     </div>
-)
+);
 
 export default CustomForm;
