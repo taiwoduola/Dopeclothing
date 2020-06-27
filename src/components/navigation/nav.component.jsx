@@ -4,17 +4,22 @@ import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
 
 
+
 import './nav.styles.scss';
 //fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 // import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 // import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
+//Cart Icon component
+import CartIcon from '../cart-icon/cart-icon.component'
 
-const Navs = ({currentUser}) => (
+
+const Navs = ({currentUser, toggleCartAction, hidden}) => (
     <div className='navigations'>
         <Link className='logo-container' to='/'> dopeLogo </Link>
 
@@ -32,9 +37,7 @@ const Navs = ({currentUser}) => (
             <Link className='icons' to='/shop'>
                 <FontAwesomeIcon icon={faHeart} />
             </Link>
-            <Link className='icons' to='/shop'>
-                <FontAwesomeIcon icon={faShoppingCart} />
-            </Link>
+            < CartIcon />
 
             {
                 currentUser ? (
@@ -48,11 +51,18 @@ const Navs = ({currentUser}) => (
             )}
 
         </div>
+            {
+                hidden ? null :    <CartDropDown />
+            }
     </div>
+  
 );
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser 
+
+
+const mapStateToProps = ({user: {currentUser}, cart: {hidden}}) => ({
+    currentUser,
+    hidden
 });
 
 export default connect(mapStateToProps)(Navs);
