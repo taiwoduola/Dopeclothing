@@ -13,6 +13,8 @@
     font-weight: bolder;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   
     &:hover {
       background-color: white;
@@ -30,6 +32,18 @@
             color: #4285f4;
         
         }
+    }
+
+    &.add-to-cart {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
     }
   }
   

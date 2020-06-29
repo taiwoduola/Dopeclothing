@@ -22,8 +22,8 @@ class ShopPage extends React.Component {
             <div className='shop-page'>
                 <div className='shop-layout'>
                     {
-                        items.map(({id, ...otherItemProps}) => (
-                            <ItemsPreview key={id} {...otherItemProps} />
+                        items.map((item) => (
+                            <ItemsPreview key={item.id} item={item} />
                         ))
                     }
                </div>

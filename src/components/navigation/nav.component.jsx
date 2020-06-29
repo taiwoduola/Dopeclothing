@@ -19,7 +19,7 @@ import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 import CartIcon from '../cart-icon/cart-icon.component'
 
 
-const Navs = ({currentUser, toggleCartAction, hidden}) => (
+const Navs = ({currentUser, hidden}) => (
     <div className='navigations'>
         <Link className='logo-container' to='/'> dopeLogo </Link>
 
@@ -37,6 +37,7 @@ const Navs = ({currentUser, toggleCartAction, hidden}) => (
             <Link className='icons' to='/shop'>
                 <FontAwesomeIcon icon={faHeart} />
             </Link>
+            
             < CartIcon />
 
             {
