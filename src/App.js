@@ -10,6 +10,7 @@ import Navs from './components/navigation/nav.component';
 import SignInSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/reducers/user/user.action';
+import CheckOutpage from './pages/checkout-page/checkout-page.component';
  
 class App extends React.Component {
 
@@ -51,6 +52,7 @@ class App extends React.Component {
                 <SignInSignUpPage />
               )} 
             />
+            <Route exact path='/checkout' component={CheckOutpage} />
         </Switch>
       </div>
     );
