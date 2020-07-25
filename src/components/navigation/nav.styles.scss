@@ -1,30 +1,42 @@
 .navigations {
-    height: 80px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.2em;
-    align-items: center;
-    margin: 0 auto;
+	height: 80px;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.2em;
+	align-items: center;
+	margin: 0 auto;
 
-    .logo-container {
-        width: 10%;
-    }
+	.logo-container {
+		width: 10%;
+		position: relative;
 
-    .navs {
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
-        text-transform: uppercase;
-        font-size: .9rem;
-    }
+		.logo {
+			position: absolute;
+			bottom: 0;
+		}
+	}
 
-    .nav-icons {
-        width: 13%;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        
-    }
+	.navs {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+		text-transform: uppercase;
+		font-size: .9rem;
 
+		.nav-home {
+			color: #ee4266;
+		}
+
+		.nav:hover {
+			border-bottom: 1px solid #ee4266;
+		}
+	}
+
+	.nav-icons {
+		width: 13%;
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+	}
 }

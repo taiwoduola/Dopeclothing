@@ -1,22 +1,13 @@
 import { combineReducers } from 'redux';
-import { persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-
 
 import userReducer from '../reducers/user/user.reducer';
 import cartReducer from '../reducers/cart/cart.reducer';
+import catergoryReducer from '../reducers/catergory/catergory.reducer';
+import shopReducer from '../reducers/shop/shop.reducer';
 
-const persistConfig = {
-    key: 'root',
-    storage: storage,
-    whitelist: ['cart ']
-}
-
-
-const rootReducer = combineReducers({
-    user: userReducer,
-    cart: cartReducer
-
+export default combineReducers({
+	user: userReducer,
+	cart: cartReducer,
+	catergory: catergoryReducer,
+	shop: shopReducer
 });
-
-export default persistReducer(persistConfig, rootReducer)
