@@ -9,7 +9,7 @@ import brownShoes from '../../../images/brownshoes.png';
 const SHOP_DATA = {
 	mens: {
 		title: 'mens',
-		routeName: 'mens',
+		routeName: 'shop/mens',
 		id: 1,
 		items: [
 			{
@@ -71,7 +71,7 @@ const SHOP_DATA = {
 	womens: {
 		id: 2,
 		title: 'womens',
-		routeName: 'womens',
+		routeName: 'shop/womens',
 		items: [
 			{
 				imageUrl: denim,
@@ -131,7 +131,7 @@ const SHOP_DATA = {
 	},
 	shoes: {
 		title: 'shoes',
-		routeName: 'shoes',
+		routeName: 'shop/shoes',
 		id: 3,
 		items: [
 			{

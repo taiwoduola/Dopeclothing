@@ -8,13 +8,10 @@
 	margin: 0 auto;
 
 	.logo-container {
-		width: 10%;
-		position: relative;
-
-		.logo {
-			position: absolute;
-			bottom: 0;
-		}
+		font-family: "palatino linotype";
+		font-weight: bold;
+		font-size: 25px;
+		color: black;
 	}
 
 	.navs {

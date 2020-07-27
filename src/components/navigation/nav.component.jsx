@@ -6,7 +6,7 @@ import { selectCurrentUser } from '../../redux/reducers/user/user.selector';
 import { selectCartHidden } from '../../redux/reducers/cart/cart.selector';
 
 //logo
-import { ReactComponent as Logo } from '../assets/logo.svg';
+// import { ReactComponent as Logo } from '../assets/dopelogo.svg';
 
 import './nav.styles.scss';
 //fontawesome
@@ -25,7 +25,7 @@ import { createStructuredSelector } from 'reselect';
 const Navs = ({ currentUser, hidden }) => (
 	<div className="navigations">
 		<Link className="logo-container" to="/">
-			<Logo className="logo" />
+			dope
 		</Link>
 
 		<div className="navs">
